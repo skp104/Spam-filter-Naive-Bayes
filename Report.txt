@@ -1,0 +1,32 @@
+Assignment 1 Report
+
+Name: Suresh Kasipandy
+
+1. Performance on the development data with 100% of the training data
+1a. spam precision:0.992551724137931
+1b. spam recall: 0.979047619047619
+1c. spam F1 score: 0.9857534246575342
+1d. ham precision:0.9503225806451613
+1e. ham recall: 0.982
+1f. ham F1 score: 0.9659016393442622
+
+2. Performance on the development data with 10% of the training data
+2a. spam precision: 0.9838754517653601
+2b. spam recall: 0.9629931972789115
+2c. spam F1 score: 0.9733223322332234
+2d. ham precision: 0.9138149556400507
+2e. ham recall: 0.9613333333333334
+2f. ham F1 score: 0.9369720597790773
+
+3. Description of enhancement(s) you tried (e.g., different approach(es) to smoothing, treating common words differently, dealing with unknown words differently):
+I made two adjustments. I switched smoothing from Laplance to Lindstone smoothing with alpha as 0.02. I also chose to filter out punctuation from the training and test 
+data sets. My standard implementation performance was already good (accuracy=0.9799033816425121) but with the enhancements I still saw good 
+improvement (accuracy=0.9903381642512077).
+
+4. Best performance results based on enhancements. Note that these could be the same or worse than the standard implementation.
+4a. spam precision: 0.9942732478865558
+4b. spam recall: 0.992108843537415
+4c. spam F1 score: 0.9931898665213839
+4d. ham precision: 0.9807692307692307
+4e. ham recall: 0.986
+4f. ham F1 score: 0.9833776595744681
